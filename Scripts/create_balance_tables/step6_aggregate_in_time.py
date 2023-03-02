@@ -250,9 +250,10 @@ for balance_table_fn in table_list:
                 for col in column_list:
                     df_tavg.loc[ind,col] = spring_neap_filter(df.loc[ind,col])
 
-            # crop times before october 1 of first water year
-            ind = df_tavg.time >= np.datetime64('%d-10-01' % (wy_list[0]-1))
-            df_tavg = df_tavg.loc[ind]
+            # editing this out so spring-neap filter works for the HAB run ...
+            ## crop times before october 1 of first water year
+            #ind = df_tavg.time >= np.datetime64('%d-10-01' % (wy_list[0]-1))
+            #df_tavg = df_tavg.loc[ind]
 
         # seasonal, monthly, and weekly averages
         elif tavg in ['Annual','Seasonal','Monthly','Weekly']:

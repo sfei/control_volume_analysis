@@ -85,7 +85,7 @@ if 1:
 param_list = ['DIN','TN','TN_include_sediment','OXY','TotalDetNS', 'Algae', 'Diat', 'Green','DiatS1']
 
 # list of types of time aggregation (e.g. ['Filtered','Cumulative','Daily']) one plot per is created
-tavg_list = ['Filtered','Cumulative']
+tavg_list = ['Daily']#'Filtered','Cumulative']
 
 # list of normalizations (divide by 'None','Area','Volume')
 norm_list = ['Area']

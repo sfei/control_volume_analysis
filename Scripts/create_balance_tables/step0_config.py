@@ -27,7 +27,7 @@ abort_for_mass_cons_error = True
 #runid = 'FR22_HAB_055'
 #runid = 'FR22_HAB_056'
 #runid = 'FR22_HAB_057'
-runid = 'FR22_HAB_058'
+runid = 'FR22_HAB_083'
 
 # if the user sets the following variables to None, they are calculated automatically, by making some assumptions about
 # how our computers are organized (see below). if your run doesn't fit the usual mold, you can override the automatic stuff
@@ -65,7 +65,7 @@ plot_substance_list = ['tn_include_sediment','tn','din','nh4','no3','don',
 # list of time averaging schemes to apply (saves space to skip some if we don't need them) 
 # (this is used in step6_aggregate_in_time.py)
 #tavg_list = ['Cumulative', 'Filtered', 'Annual', 'Seasonal', 'Monthly', 'Weekly']
-tavg_list = ['Cumulative', 'Filtered', 'Seasonal','Monthly']
+tavg_list = ['Filtered']#'Cumulative', 'Filtered', 'Seasonal','Monthly']
 
 # float format for csv files
 float_format = '%1.6e'
